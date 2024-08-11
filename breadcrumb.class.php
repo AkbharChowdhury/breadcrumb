@@ -25,10 +25,10 @@ readonly class Breadcrumb
         ?>
 
         <?php if ($isActive): ?>
-        <li class="breadcrumb-item active" aria-current="page"><a href="<?= $url ?>"><?= Helper::titleCase($text) ?></a></li>
-    <?php else: ?>
-        <li class="breadcrumb-item"><a href="<?= $url ?>"><?= Helper::titleCase($text) ?></a></li>
-    <?php endif; ?>
+            <li class="breadcrumb-item active" aria-current="page"><a href="<?= $url ?>"><?= Helper::titleCase($text) ?></a></li>
+        <?php else: ?>
+            <li class="breadcrumb-item"><a href="<?= $url ?>"><?= Helper::titleCase($text) ?></a></li>
+        <?php endif; ?>
         <?php
 
     }
